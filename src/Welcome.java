@@ -67,7 +67,7 @@ public class Welcome extends javax.swing.JFrame {
         jLabel12.setText("123456789");
 
         jLabel13.setFont(new java.awt.Font("Serif", 3, 12)); // NOI18N
-        jLabel13.setText("HealthCenter@gmail.com");
+        jLabel13.setText("healthcenter@gmail.com");
 
         jButton2.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
         jButton2.setText("LOG IN");

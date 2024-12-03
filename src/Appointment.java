@@ -235,7 +235,7 @@ public class Appointment extends javax.swing.JFrame {
         jPanel3.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Serif", 1, 12)); // NOI18N
-        jLabel1.setText("HealthCenter@gmail.com");
+        jLabel1.setText("healthcenter@gmail.com");
         jPanel3.add(jLabel1);
         jLabel1.setBounds(860, 40, 140, 20);
 
@@ -346,41 +346,35 @@ public class Appointment extends javax.swing.JFrame {
 
     
         APPOINTMENT_CONFIRMATION confirmAppointment = new APPOINTMENT_CONFIRMATION();
-        //Name
+        
         confirmAppointment.lblFirstName.setText(Appointment.jfirstname.getText());
         confirmAppointment.lblLastName.setText(Appointment.jlastname.getText());
-        
-        //Birtdate
+               
         String selectedBDay = birthDay.getSelectedItem().toString();
         String selectedBMonth = birthMonth.getSelectedItem().toString();
         String selectedBYear = birthYear.getSelectedItem().toString();
         String birthDate = selectedBMonth + " " + selectedBDay + ", " + selectedBYear;
         confirmAppointment.lblBDate.setText(birthDate);
-        
-        //Gender
+              
         if (jRadioButton1.isSelected()) {
         confirmAppointment.lblGender.setText("Male");
         } else if (jRadioButton2.isSelected()) {
         confirmAppointment.lblGender.setText("Female");
         }
-        
-        //Contact number, address, email address
+              
         confirmAppointment.lblContactNumber.setText(Appointment.jcontactNumber.getText());
         confirmAppointment.lblAddress.setText(Appointment.jaddress.getText());
         confirmAppointment.lblEmailAddress.setText(Appointment.jemailAddress.getText());
         
-        //Appointment type
         String selectedAppointmentType = appointmentType.getSelectedItem().toString();
         confirmAppointment.lblAppointmentType.setText(selectedAppointmentType);
-        
-        //Appointment Date
+          
         String selectedAptMonth = japtMonth.getSelectedItem().toString();
         String selectedAptDay = japtDay.getSelectedItem().toString();
         String selectedAptYear = japtYear.getSelectedItem().toString();
         String appointmentDate = selectedAptMonth + " " + selectedAptDay + ", " + selectedAptYear;
         confirmAppointment.lblAppointmentDate.setText(appointmentDate);
         
-        //Appointment time
         String selectedHour = japtHour.getSelectedItem().toString();
         String selectedMinute = japtMinute.getSelectedItem().toString();
         String selectedMeridiem = japtMeridiem.getSelectedItem().toString();
